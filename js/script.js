@@ -22,5 +22,5 @@ my_button.addEventListener("click", function () {
 });
 
 my_button_2.addEventListener("click", function () {
-	alert("Biglietto annullato");
+	window.location.reload();
 });
