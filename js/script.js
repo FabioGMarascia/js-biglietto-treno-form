@@ -1,18 +1,18 @@
-const km = prompt("Numero chilometri da percorrere");
-const anni = prompt("Età del passeggero");
-const prezzo_base = km * 0.21;
-let prezzo_scontato = prezzo_base;
-let prezzo_arrotondato;
+const km = document.getElementById("km").value;
+const anni = document.getElementById("age").value;
+const my_button = document.getElementById("my-button");
+const base_price = km * 0.21;
+let discounted_price = base_price;
+let rounded_price;
 
 if (anni < 18) {
-	prezzo_scontato = prezzo_base * 0.8;
+	discounted_price = base_price * 0.8;
 } else if (anni > 65) {
-	prezzo_scontato = prezzo_base * 0.6;
+	discounted_price = base_price * 0.6;
 }
 
-prezzo_arrotondato = prezzo_scontato.toFixed(2);
-console.log(prezzo_arrotondato);
+rounded_price = discounted_price.toFixed(2);
 
-document.getElementById(
-	"prezzo-biglietto"
-).innerHTML = `Il prezzo del biglietto è: ${prezzo_arrotondato}€`;
+my_button.addEventListener("click", function () {
+	console.log(rounded_price);
+});
