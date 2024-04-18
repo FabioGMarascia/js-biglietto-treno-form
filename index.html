@@ -3,22 +3,77 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<title>Form Biglietto Treno</title>
 	</head>
 	<body>
-		<section>
-			<div>
-				<h2>Numero chilometri</h2>
-				<input type="number" name="" id="km" />
-			</div>
+		<div class="container">
+			<div class="form-ticket row gap-3 justify-content-center my-5">
+				<section class="form col-5 text-center rounded">
+					<h2 class="h1 py-3">Calcola il prezzo del biglietto</h2>
 
-			<div>
-				<h2>Età passeggero</h2>
-				<input type="number" name="" id="age" />
-			</div>
+					<hr />
 
-			<button id="my-button">Invio</button>
-		</section>
+					<div class="my-4">
+						<h4 class="mb-4">Nome e cognome</h4>
+						<input type="text" name="" id="name" class="text-center" />
+					</div>
+
+					<hr />
+
+					<div class="my-4">
+						<h4 class="mb-4">Chilometri da percorrere</h4>
+						<input type="text" name="" id="km" class="text-center" />
+					</div>
+
+					<hr />
+
+					<div class="my-4">
+						<h4 class="mb-4">Età passeggero</h4>
+						<input type="text" name="" id="age" class="text-center" />
+					</div>
+
+					<hr />
+
+					<div class="button my-4">
+						<button id="my-button" class="btn bg-primary">Invio</button>
+						<button id="my-button-2" class="btn bg-primary">Annulla</button>
+					</div>
+				</section>
+
+				<section class="ticket col-5 text-center rounded">
+					<h2 class="h1 py-3">Biglietto generato</h2>
+
+					<hr />
+
+					<div class="my-4">
+						<h4 class="mb-4">Nome passeggero</h4>
+						<p id="passenger-name-surname" class="my-4"></p>
+					</div>
+
+					<hr />
+
+					<div class="my-4">
+						<h4 class="mb-4">Tipo Biglietto</h4>
+						<p id="passenger-ticket-type"></p>
+					</div>
+
+					<hr />
+
+					<div class="my-4">
+						<h4 class="mb-4">Costo biglietto</h4>
+						<p id="passenger-ticket-cost"></p>
+					</div>
+
+					<hr />
+				</section>
+			</div>
+		</div>
 
 		<script type="text/javascript" src="./js/script.js"></script>
 	</body>

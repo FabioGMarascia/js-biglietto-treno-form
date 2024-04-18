@@ -1,0 +1,9 @@
+/* COMMON */
+body {
+	background-color: #222;
+}
+
+.form,
+.ticket {
+	background-color: white;
+}
